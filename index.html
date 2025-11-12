@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic Arithmetic Functions</title>
+</head>
+<body>
+<h2>Basic Arithmetic Functions</h2>
+Operand1: <input id="a"><br><br>
+Operand2: <input id="b"><br><br>
+<button onclick="calc('+')">Add</button>
+<button onclick="calc('-')">Sub</button>
+<button onclick="calc('*')">Mul</button>
+<button onclick="calc('/')">Div</button>
+<button onclick="calc('%')">Mod</button>
+<p>Result: <input id="res" readonly></p>
+
+<script>
+function calc(op){
+let x=Number(a.value),y=Number(b.value),r;
+if(op=='+')r=x+y;
+else if(op=='-')r=x-y;
+else if(op=='*')r=x*y;
+else if(op=='/')r=y?x/y:'Error';
+else if(op=='%')r=y?x%y:'Error';
+res.value=r;
+}
+</script>
+</body>
+</html>
